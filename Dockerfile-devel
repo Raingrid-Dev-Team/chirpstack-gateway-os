@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
     'git' \
     'libncurses5-dev' \
     'libssl-dev' \
-    'python3-distutils' \
+    'python3' \
+    'python3-setuptools' \
     'rsync' \
     'unzip' \
     'zlib1g-dev' \
@@ -29,6 +30,7 @@ RUN apt-get update && apt-get install --no-install-recommends --no-install-sugge
     'curl' \
     'quilt' \
     'nano' \
+    'diffutils' \
   && \
   rm -f -r '/var/lib/apt/' && \
   rm -f -r '/var/cache/apt/' && \
